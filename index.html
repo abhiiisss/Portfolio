@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/98a179a0c5.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+<body>
+    <!-- -------Header Section-------- -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/new_logo.png" class="logo">
+                <ul id="sidemenu">
+                 <li><a href="#header">Home</a></li>
+                 <li><a href="#about">About</a></li>  
+                 <li><a href="#Services">Services</a></li>
+                 <li><a href="#portfolio">Portfolio</a></li>
+                 <li><a href="#Contact">Contact</a></li>  
+                 <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>   
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+             <div class="header-text">
+                <p><span class="text"></span></p>
+                <h1>Hi, I'm <span>Abhishek</span><br> Sharma from India</h1>
+             </div>    
+        </div>
+         
+    </div>
+
+    <!-- -----------About Me Section---------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                <img src="Images/aboutme_img.jpg">
+                </div>
+
+                <div class="about-col-2">
+                 <h1 class="sub-title">About Me</h1>
+                 <p>Hi, I'm Abhishek Sharma from Mumbai, India. I'm a dedicated professional skilled in Data Science,
+                    Data Analysis, Web Development and AWS. Specializing in machine learning and statistical models, 
+                    I excel in extracting insights from complex data and crafting user-friendly websites. In my role 
+                    at My Service, I optimized data processes, showcasing my commitment to efficiency. Eager for 
+                    collaborations in the dynamic fields of Data Science and Web Development.</p>
+                
+
+                 <div class="tab-titles">
+                     <div class="tab-links active-link" onclick="opentab(event,'Skills')">Skills</div>
+                     <div class="tab-links" onclick="opentab(event,'experience')">Experience</div>
+                     <div class="tab-links" onclick="opentab(event,'education')">Education</div>
+                 </div>
+
+                 <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Data Science</span><br>Data Science and Data Analysis </li>
+                            <li><span>Machine Learning</span><br>Building ML Models</li>
+                            <li><span>Web Development</span><br> Website Developer</li>
+                        </ul>
+                 </div>
+
+                 <div class="tab-contents" id="experience">
+                     <ul>
+                         <li><span>Data Operations</span><br>My Service(2022-2023)</li>
+                         <li><span>Data Analyst Intern</span><br>360Digitmg(Sep 2023-Nov 2023)</li>
+                     </ul>
+                 </div>
+
+                 <div class="tab-contents" id="education">
+                     <ul>
+                         <li><span>SK College(2019-2022)</span><br>BSc Computer Science</li>
+                     </ul>
+                 </div>
+               </div>
+            </div>
+        </div>
+
+    </div>
+    
+    
+    <!-- -------Services-------- -->
+    
+    <div id="Services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="Services-list">
+                <div>
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <h2>Data Analysis</h2>
+                    <p>Unlock the potential of your data with my expertise in Data Analysis. From deciphering intricate patterns to crafting insightful reports, I navigate through complex datasets with precision. Harness the power of data-driven decision-making and gain a competitive edge in your endeavors.</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-chart-line"></i>
+                    <h2>Machine Learning</h2>
+                    <p>Elevate your projects with cutting-edge solutions through my proficiency in Machine Learning. I specialize in implementing advanced algorithms, predictive modeling, and intelligent systems. Let's transform your data into a strategic asset, enabling innovation and efficiency in every facet of your business.</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Experience the seamless fusion of creativity and functionality in Web Development. With skills spanning both front-end and back-end technologies, I craft user-friendly websites that leave a lasting impression. Elevate your online presence and provide an engaging digital experience that resonates with your audience.</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------Portfolio----------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/work-1.png">
+                    <div class="layer">
+                        <h3>Social media app</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur aspernatur quod praesentium, exercitationem voluptatum est a perspiciatis porro cumque sint laborum assumenda deleniti ut aliquid nisi earum vero voluptas illo?</p>
+                        <a href="https://github.com/abhis12q/Demo-Project" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="Images/work-2.png">
+                    <div class="layer">
+                        <h3>ML app</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur aspernatur quod praesentium, exercitationem voluptatum est a perspiciatis porro cumque sint laborum assumenda deleniti ut aliquid nisi earum vero voluptas illo?</p>
+                        <a href="https://github.com/abhis12q/Customer_Churn" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="Images/work-3.png">
+                    <div class="layer">
+                        <h3>AI app</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur aspernatur quod praesentium, exercitationem voluptatum est a perspiciatis porro cumque sint laborum assumenda deleniti ut aliquid nisi earum vero voluptas illo?</p>
+                        <a href="https://github.com/abhis12q/Amazon-Web-Page" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/abhis12q?tab=repositories" taregt="_blank" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- --------------Contact------------------- -->
+    <div id="Contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>abhissharma2281@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 9372551383</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/abhishek-sharma-b8619a225/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/abhiiisss" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/abhiiisss/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://twitter.com/Abhishe59459351" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                    <a href="Images/Resume_abhi.docx" download class="btn btn2">Download CV</a>
+                </div>
+
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Abhishek Sharma.</p>
+        </div>
+    </div>
+
+ <script>
+     var tablinks = document.getElementsByClassName("tab-links");
+     var tabcontents = document.getElementsByClassName("tab-contents");
+
+          // Function to open a tab and update the active links and tab contents.
+     function opentab(event, tabname){
+     for ( var tablink of tablinks){
+         tablink.classList.remove("active-link");
+     } 
+     for (var tabcontent of tabcontents){
+         tabcontent.classList.remove("active-tab");
+     }
+        
+     event.target.classList.add("active-link");
+     document.getElementById(tabname).classList.add("active-tab");
+     }
+ </script>
+  
+ <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+     function openmenu()
+     {
+        sidemenu.style.right = "0";
+     }
+
+      function closemenu()
+     {
+       sidemenu.style.right = "-200px";
+     };
+ </script>
+
+ <script>
+     const scriptURL = 'https://script.google.com/macros/s/AKfycbwxllDy2Epljtu88zYHYM08Djn2S2b5H4_623Iz9KDHwu-OghIEAmJkHQhl8vjprRyBiQ/exec';
+     const form = document.forms["submit-to-google-sheet"];
+     const msg = document.getElementById("msg");
+
+     form.addEventListener('submit', e => {
+        e.preventDefault()
+     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully"
+        setTimeout(function() {
+            msg.innerHTML = "";
+        }, 5000);
+        form.reset();
+      })
+      .catch(error => console.error('Error!', error.message));
+     });
+ </script>
+
+ <script> 
+    var typed = new Typed(".text",{
+        strings: ["Data Scientist.","Data Analyst.", "Web Developer.", "Freelancer."],
+        typeSpeed: 80,
+        backSpeed: 50,
+        backDelay: 1000,
+        loop: true
+    })
+ </script>
+   
+</body>
+</html> 
