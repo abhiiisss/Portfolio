@@ -214,7 +214,8 @@ p{
 }
 
 .Services-list div p{
-    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
     font-weight: 100;
 }
 
@@ -312,6 +313,7 @@ p{
 }
 
 /* --------------Contacts----------------- */
+
 
 .contact-left{
     flex-basis:35%;
